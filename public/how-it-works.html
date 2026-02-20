@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vorabpauschale berechnen: Formel, Basiszins & Anlage KAP-INV erklärt</title>
+    <meta name="description" content="Wie wird die Vorabpauschale berechnet? Formel, Basiszins-Tabelle, Teilfreistellung und Anlage KAP-INV Ausfüllhilfe. ETF Steuer Deutschland für ausländische Broker einfach erklärt." />
+    <meta name="keywords" content="Vorabpauschale berechnen, Anlage KAP-INV, ETF Steuer Deutschland, Basiszins, Teilfreistellung, Steuererklärung ausländischer Broker, Vorabpauschale Formel, ELSTER Anlage KAP" />
+    <link rel="canonical" href="https://www.germantaxtracker.de/how-it-works" />
+    <meta property="og:title" content="Vorabpauschale berechnen: Formel, Basiszins & Anlage KAP-INV" />
+    <meta property="og:description" content="Vorabpauschale Formel, Basiszins-Tabelle, Teilfreistellung-Sätze und Anlage KAP-INV Ausfüllhilfe für ausländische Broker." />
+    <meta property="og:url" content="https://www.germantaxtracker.de/how-it-works" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="de_DE" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Vorabpauschale berechnen: Formel, Basiszins & Anlage KAP-INV erklärt",
+      "description": "Vorabpauschale berechnen für ETF und Fonds. Formel, Basiszins-Tabelle, Teilfreistellung und Anlage KAP-INV Ausfüllhilfe für Steuererklärung mit ausländischem Broker.",
+      "author": {
+        "@type": "Organization",
+        "name": "German Investment Tax Tracker"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "German Investment Tax Tracker"
+      }
+    }
+    </script>
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #f9fafb; color: #111827; line-height: 1.6; }
+      a { color: #2563eb; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      header { background: #fff; border-bottom: 1px solid #e5e7eb; }
+      .container { max-width: 48rem; margin: 0 auto; padding: 0 1.5rem; }
+      .header-inner { padding: 1rem 0; }
+      .back-link { display: inline-flex; align-items: center; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem; }
+      .back-link:hover { color: #111827; text-decoration: none; }
+      h1 { font-size: 1.5rem; font-weight: 600; }
+      .subtitle { color: #6b7280; margin-top: 0.25rem; }
+      main { padding: 2rem 0; }
+      section { margin-bottom: 3rem; }
+      h2 { font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; }
+      h3 { font-size: 1.125rem; font-weight: 500; color: #1f2937; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+      p { color: #4b5563; margin-bottom: 1rem; }
+      .formula-box { background: #f3f4f6; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1rem; font-family: monospace; font-size: 0.875rem; }
+      .formula-box div { margin-bottom: 0.5rem; }
+      .formula-box div:last-child { margin-bottom: 0; }
+      .warning-box { background: #fffbeb; border: 1px solid #fde68a; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1rem; }
+      .warning-box p { color: #92400e; font-size: 0.875rem; margin-bottom: 0; }
+      table { width: 100%; font-size: 0.875rem; border-collapse: collapse; }
+      .table-wrap { background: #f3f4f6; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1rem; }
+      th { text-align: left; padding: 0.5rem 0; border-bottom: 1px solid #d1d5db; }
+      th.right { text-align: right; }
+      td { padding: 0.5rem 0; border-bottom: 1px solid #e5e7eb; }
+      td.right { text-align: right; }
+      ul { color: #4b5563; margin-bottom: 1rem; padding-left: 1.5rem; }
+      li { margin-bottom: 0.5rem; }
+      em { font-style: italic; }
+      footer { background: #fff; border-top: 1px solid #e5e7eb; margin-top: 3rem; }
+      .footer-inner { padding: 2rem 0; }
+      .disclaimer { font-size: 0.75rem; color: #6b7280; margin-bottom: 1rem; }
+      .copyright { font-size: 0.75rem; color: #9ca3af; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a href="/" class="back-link">&larr; Back to calculator</a>
+        <h1>How the Calculations Work</h1>
+        <p class="subtitle">Understanding German investment taxation for foreign broker accounts</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <article>
+
+          <section>
+            <h2>Overview</h2>
+            <p>
+              German tax residents who hold investment funds (ETFs, mutual funds) through foreign brokers
+              are responsible for reporting their investment income to the German tax authorities.
+              Unlike German brokers, foreign brokers do not automatically withhold taxes or provide
+              German tax documents.
+            </p>
+            <p>
+              This tool calculates the values needed for your annual tax return, specifically for
+              the ELSTER forms Anlage KAP-INV (investment funds) and Anlage KAP (other capital income).
+            </p>
+            <p>
+              The following sections explain the tax concepts and formulas used in the calculations.
+            </p>
+          </section>
+
+          <section>
+            <h2>Vorabpauschale (Advance Lump Sum)</h2>
+
+            <h3>What it is</h3>
+            <p>
+              The Vorabpauschale is a deemed annual income on investment funds, introduced in 2018
+              as part of the Investment Tax Reform Act (Investmentsteuerreformgesetz). It ensures
+              that fund investors pay some tax each year, even on accumulating funds that don't
+              distribute dividends.
+            </p>
+            <p>
+              The Vorabpauschale for a given year (e.g., 2024) is considered received on
+              January 2nd of the following year (e.g., January 2, 2025), and is reported in
+              the tax return for that following year (e.g., filed in 2026 for tax year 2025).
+            </p>
+
+            <h3>The formula</h3>
+            <p>The calculation follows these steps:</p>
+            <div class="formula-box">
+              <div><strong>1. Basisertrag</strong> = January 1 value &times; Basiszins &times; 0.7</div>
+              <div><strong>2. Mehrbetrag</strong> = (Dec 31 value &minus; Jan 1 value) + Distributions</div>
+              <div><strong>3. Vorabpauschale</strong> = min(Basisertrag, Mehrbetrag) &minus; Distributions</div>
+            </div>
+            <p>
+              The Mehrbetrag (&sect; 18 Abs. 1 Satz 3 InvStG) represents the total return of the fund
+              for the year: price change plus any distributions received. The Basisertrag is capped
+              at this Mehrbetrag, and then distributions are subtracted. The Vorabpauschale cannot
+              be negative.
+            </p>
+
+            <h3>Basiszins (Base Interest Rate)</h3>
+            <p>
+              The Basiszins is published annually by the German Federal Ministry of Finance
+              (Bundesfinanzministerium). It is derived from long-term government bond yields.
+              When the Basiszins is zero or negative, no Vorabpauschale is charged for that year.
+            </p>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Year</th>
+                    <th class="right">Basiszins</th>
+                    <th class="right">VP charged?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>2018</td><td class="right">0.87%</td><td class="right">Yes</td></tr>
+                  <tr><td>2019</td><td class="right">0.52%</td><td class="right">Yes</td></tr>
+                  <tr><td>2020</td><td class="right">0.07%</td><td class="right">Yes</td></tr>
+                  <tr><td>2021</td><td class="right">-0.45%</td><td class="right">No</td></tr>
+                  <tr><td>2022</td><td class="right">-0.05%</td><td class="right">No</td></tr>
+                  <tr><td>2023</td><td class="right">2.55%</td><td class="right">Yes</td></tr>
+                  <tr><td>2024</td><td class="right">2.29%</td><td class="right">Yes</td></tr>
+                  <tr><td>2025</td><td class="right">2.53%</td><td class="right">Yes</td></tr>
+                  <tr><td>2026</td><td class="right">3.20%</td><td class="right">Yes</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Pro-rata for mid-year purchases</h3>
+            <p>
+              According to &sect; 18 Abs. 2 InvStG, if fund shares are acquired during the year,
+              the Vorabpauschale is reduced proportionally. The reduction is 1/12 for each
+              full month before the purchase month.
+            </p>
+            <div class="formula-box">
+              Pro-rata factor = (13 &minus; purchase month) / 12
+            </div>
+            <p>
+              Examples: January purchase = 12/12 (full year), June purchase = 7/12,
+              December purchase = 1/12.
+            </p>
+
+            <h3>Multiple purchases and savings plans</h3>
+            <p>
+              For investors with monthly savings plans (Sparplan) or multiple purchases throughout the year,
+              each purchase should technically be calculated separately with its own pro-rata factor.
+            </p>
+            <p>
+              The precise calculation requires knowing the fund's NAV (Net Asset Value) on January 1st
+              and multiplying by the number of shares from each purchase. This tool uses an
+              approximation: the invested amount is used as a proxy for the January 1 value.
+            </p>
+            <div class="warning-box">
+              <p>
+                <strong>Approximation note:</strong> For mid-year purchases, this tool uses the
+                invested amount rather than (January 1 NAV &times; shares). This is a reasonable
+                approximation when fund prices don't change dramatically within the year,
+                but may slightly over- or underestimate the actual Vorabpauschale.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Teilfreistellung (Partial Exemption)</h2>
+            <p>
+              To avoid double taxation (funds already pay taxes at the fund level), a portion
+              of the income from investment funds is tax-exempt. The exemption rate depends
+              on the fund type:
+            </p>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Fund Type</th>
+                    <th class="right">Exemption</th>
+                    <th class="right">Taxable</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Equity funds (Aktienfonds)</td><td class="right">30%</td><td class="right">70%</td></tr>
+                  <tr><td>Mixed funds (Mischfonds)</td><td class="right">15%</td><td class="right">85%</td></tr>
+                  <tr><td>Real estate funds (Immobilienfonds)</td><td class="right">60%</td><td class="right">40%</td></tr>
+                  <tr><td>Foreign real estate funds</td><td class="right">80%</td><td class="right">20%</td></tr>
+                  <tr><td>Other funds (Sonstige)</td><td class="right">0%</td><td class="right">100%</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              A fund qualifies as an equity fund (Aktienfonds) if it continuously holds at least 51% equities.
+              Mixed funds (Mischfonds) require at least 25% equities. The fund's documentation (KIID/KID)
+              typically states the applicable Teilfreistellung rate.
+            </p>
+          </section>
+
+          <section>
+            <h2>Capital Gains Tax Rate</h2>
+            <p>Germany applies a flat tax (Abgeltungsteuer) on capital income:</p>
+            <div class="formula-box">
+              <div>Capital gains tax: 25.00%</div>
+              <div>Solidarity surcharge: 5.5% of the tax = 1.375%</div>
+              <div><strong>Total: 26.375%</strong></div>
+            </div>
+            <p>
+              Church tax (Kirchensteuer) may apply additionally (8-9% of the capital gains tax,
+              depending on the state). This tool does not include church tax in its calculations.
+            </p>
+          </section>
+
+          <section>
+            <h2>Selling Fund Shares</h2>
+
+            <h3>Basic calculation</h3>
+            <p>When selling fund shares, the taxable gain is:</p>
+            <div class="formula-box">
+              Taxable gain = Sale proceeds &minus; Purchase cost (cost basis)
+            </div>
+
+            <h3>Vorabpauschale credit</h3>
+            <p>
+              Any Vorabpauschale already paid during the holding period can be deducted from
+              the taxable gain upon sale. This prevents double taxation&mdash;you don't pay tax
+              twice on the same gains.
+            </p>
+            <div class="formula-box">
+              <div>Capital gain = Proceeds &minus; Cost basis</div>
+              <div>Taxable after VP = Capital gain &minus; Accumulated VP credit</div>
+              <div>Final taxable = Taxable after VP &times; (1 &minus; Teilfreistellung rate)</div>
+            </div>
+            <p>
+              If you have sold portions of a fund previously, the VP credit used in earlier sales
+              is no longer available for subsequent sales.
+            </p>
+          </section>
+
+          <section>
+            <h2>ELSTER Form References</h2>
+
+            <h3>Anlage KAP-INV</h3>
+            <p>
+              This form is for reporting income from investment funds. Distributions and
+              the Vorabpauschale are reported in different lines depending on the fund type:
+            </p>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr><th>Line</th><th>Content</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td colspan="2" style="font-weight:500;padding-top:0.75rem">Ausschüttungen (Distributions)</td></tr>
+                  <tr><td>Zeile 4</td><td>Equity funds (Aktienfonds)</td></tr>
+                  <tr><td>Zeile 5</td><td>Mixed funds (Mischfonds)</td></tr>
+                  <tr><td>Zeile 6</td><td>Real estate funds (Immobilienfonds)</td></tr>
+                  <tr><td>Zeile 7</td><td>Foreign real estate funds</td></tr>
+                  <tr><td>Zeile 8</td><td>Other funds (Sonstige)</td></tr>
+                  <tr><td colspan="2" style="font-weight:500;padding-top:0.75rem">Vorabpauschale</td></tr>
+                  <tr><td>Zeile 9</td><td>Equity funds (Aktienfonds)</td></tr>
+                  <tr><td>Zeile 10</td><td>Mixed funds (Mischfonds)</td></tr>
+                  <tr><td>Zeile 11</td><td>Real estate funds (Immobilienfonds)</td></tr>
+                  <tr><td>Zeile 12</td><td>Foreign real estate funds</td></tr>
+                  <tr><td>Zeile 13</td><td>Other funds (Sonstige)</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              Report the Vorabpauschale <em>before</em> applying Teilfreistellung.
+              The tax office applies the exemption automatically.
+            </p>
+
+            <h3>Anlage KAP</h3>
+            <p>
+              This form is for other capital income (interest, dividends, stock sales)
+              from foreign sources:
+            </p>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr><th>Line</th><th>Content</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Zeile 19</td><td>Total capital income (interest, dividends, gains)</td></tr>
+                  <tr><td>Zeile 20</td><td>Of which: stock sale gains (subset of Zeile 19)</td></tr>
+                  <tr><td>Zeile 41</td><td>Foreign withholding tax paid</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section>
+            <h2>Limitations and Considerations</h2>
+            <p>
+              This tool provides calculations based on the formulas and rates described above.
+              The following limitations apply:
+            </p>
+            <ul>
+              <li><strong>Mid-year purchase approximation:</strong> For purchases made during the year,
+                the invested amount is used as an approximation rather than the exact January 1
+                NAV multiplied by shares.</li>
+              <li><strong>Church tax not included:</strong> The calculations do not include
+                Kirchensteuer, which varies by state and religious affiliation.</li>
+              <li><strong>Freistellungsauftrag not factored:</strong> The tax-free allowance
+                (Sparerpauschbetrag) of &euro;1,000 (single) or &euro;2,000 (married) is not deducted.
+                This allowance is typically used at German banks first.</li>
+              <li><strong>Loss offsetting:</strong> The tool does not handle loss carryforwards
+                or offsetting between different types of capital income.</li>
+              <li><strong>Currency conversion:</strong> All values should be entered in EUR.
+                Currency conversion from foreign currencies must be done separately using
+                appropriate exchange rates.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Summary</h2>
+            <p>
+              German investment taxation involves the annual Vorabpauschale on fund holdings
+              and capital gains tax on sales. The key formulas are:
+            </p>
+            <ul>
+              <li>Vorabpauschale = min(Jan 1 value &times; Basiszins &times; 0.7, Mehrbetrag) &minus; distributions, where Mehrbetrag = price change + distributions</li>
+              <li>Pro-rata reduction for mid-year purchases: (13 &minus; month) / 12</li>
+              <li>Teilfreistellung reduces taxable amounts by 15-80% depending on fund type</li>
+              <li>Tax rate: 26.375% (25% + solidarity surcharge)</li>
+              <li>Accumulated Vorabpauschale is credited against gains when selling</li>
+            </ul>
+            <p>
+              The calculated values can be entered into ELSTER forms Anlage KAP-INV and
+              Anlage KAP as part of your annual tax return.
+            </p>
+          </section>
+
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <p class="disclaimer">
+          <strong>Disclaimer / Haftungsausschluss:</strong> This tool is provided "as is" for informational and educational purposes only. It does not constitute tax, legal, or financial advice. No guarantee is made regarding the accuracy, completeness, or currentness of the calculations. Tax laws and rates may change. You are solely responsible for verifying all values before filing your tax return. The authors and operators accept no liability for errors, incorrect filings, financial losses, or any other damages. Always consult a qualified tax advisor (Steuerberater).
+        </p>
+        <p class="disclaimer" style="color: #9ca3af;">
+          Dieses Tool dient ausschließlich zu Informationszwecken und stellt keine Steuer- oder Rechtsberatung dar. Für die Richtigkeit der Berechnungen wird keine Gewähr übernommen. Jegliche Haftung ist ausgeschlossen.
+        </p>
+        <p class="copyright">&copy; 2026 German Investment Tax Tracker</p>
+      </div>
+    </footer>
+  </body>
+</html>
